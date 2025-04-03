@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { convert } from '@/utils/convert';
+import { convert } from '../function/convert';
 
 interface Props<T, V> {
   value: T;

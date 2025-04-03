@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react';
-import { iif } from '@/utils/iif';
+import { iif } from '@/utils/function/iif';
 
 interface Props {
   expression: boolean;

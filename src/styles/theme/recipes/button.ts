@@ -22,8 +22,8 @@ export const buttonRecipe = defineRecipe({
     transitionProperty: 'all',
     transitionDuration: '200ms',
     focusVisibleRing: 'outside',
-    backgroundColor: 'brand.950',
-    background: 'brand.950',
+    backgroundColor: 'brand.90',
+    background: 'brand.90',
     _disabled: {
       layerStyle: 'disabled',
     },
@@ -114,18 +114,18 @@ export const buttonRecipe = defineRecipe({
     color: {
       brand: {
         color: 'white',
-        background: 'brand.950',
+        background: 'brand.90',
       },
     },
     variant: {
       primary: {
-        background: 'colorPalette.600',
+        background: 'colorPalette.60',
         color: 'white',
         _hover: {
-          background: 'colorPalette.600',
+          background: 'colorPalette.60',
         },
         _expanded: {
-          background: 'colorPalette.700',
+          background: 'colorPalette.70',
         },
       },
       secondary: {
@@ -141,9 +141,9 @@ export const buttonRecipe = defineRecipe({
       },
       ghost: {
         background: 'transparent',
-        color: 'colorPalette.900',
+        color: 'colorPalette.90',
         _hover: {
-          background: 'neutral.100/10',
+          background: 'neutral.10/10',
         },
         // _expanded: {
         //   background: 'colorPalette.subtle',

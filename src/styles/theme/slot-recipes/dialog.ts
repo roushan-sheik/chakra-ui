@@ -17,7 +17,7 @@ export const dialogSlotRecipe = defineSlotRecipe({
   className: 'chakra-dialog',
   base: {
     backdrop: {
-      background: 'blackAlpha.500',
+      background: 'blackAlpha.50',
       pos: 'fixed',
       left: 0,
       top: 0,

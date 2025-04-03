@@ -1,5 +1,5 @@
 FROM --platform=linux/amd64 597088013768.dkr.ecr.us-west-2.amazonaws.com/node:22-slim
-LABEL authors="roushan"
+LABEL authors="minchulpark"
 ENV RUST_BACKTRACE=1
 # Copy the rest of the application code into the container
 COPY . .

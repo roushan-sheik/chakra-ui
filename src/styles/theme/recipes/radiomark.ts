@@ -20,7 +20,7 @@ export const radiomarkRecipe = defineRecipe({
     },
     _invalid: {
       colorPalette: 'red',
-      borderColor: 'red.500',
+      borderColor: 'red.50',
     },
     _disabled: {
       opacity: '0.5',

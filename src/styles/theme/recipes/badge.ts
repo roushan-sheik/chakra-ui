@@ -5,7 +5,7 @@ export const badgeRecipe = defineRecipe({
   base: {
     display: 'inline-flex',
     alignItems: 'center',
-    borderRadius: '8px', // 'l2' → 8px (대략적인 값)
+    borderRadius: '8px',
     gap: '4px',
     fontWeight: '500', // "medium" = 500
     fontVariantNumeric: 'tabular-nums',

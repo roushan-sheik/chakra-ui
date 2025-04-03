@@ -79,7 +79,7 @@ const eslintCustomRuleConfig = [
 
       // TypeScript rules
       '@typescript-eslint/no-non-null-assertion': 'warn',
-      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/no-use-before-define': ['warn', { typedefs: false }],
       '@typescript-eslint/no-empty-interface': 'off',

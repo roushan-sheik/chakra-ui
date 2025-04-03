@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $REGISTRY_URL
+  build:
+    commands:
+      - echo Building the Docker image...
+      - docker build -t $REGISTRY_URL:$TAG .
+      - docker tag $REGISTRY_URL:$TAG $REGISTRY_URL:$CODEBUILD_RESOLVED_SOURCE_VERSION
+  post_build:
+    commands:
+      - echo Pushing the Docker image...
+      - docker push $REGISTRY_URL:$TAG
+      - docker push $REGISTRY_URL:$CODEBUILD_RESOLVED_SOURCE_VERSION
+      - echo Writing image definitions file...
+      - printf '[{"name":"web","imageUri":"%s"}]' $REGISTRY_URL:$CODEBUILD_RESOLVED_SOURCE_VERSION > imagedefinitions.json
+
+artifacts:
+  files: imagedefinitions.json
